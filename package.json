@@ -27,5 +27,9 @@
     "degit": "^2.8.4",
     "inquirer": "^13.2.2",
     "ora": "^9.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muralikrishnat/genpro-cli"
   }
 }
