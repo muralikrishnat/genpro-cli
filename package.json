@@ -1,6 +1,6 @@
 {
   "name": "genpro-cli",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "CLI to generate UI/API/Fullstack projects from versioned GitHub templates",
   "main": "index.js",
   "type": "module",
