@@ -4,7 +4,6 @@ import inquirer from "inquirer";
 import ora from "ora";
 import chalk from "chalk";
 import degit from "degit";
-import axios from "axios";
 
 const OWNER = "muralikrishnat";
 const REPO = "pro-gen-templates";
@@ -12,8 +11,11 @@ const BRANCH = "main";
 
 async function getVersions(type) {
   const url = `https://raw.githubusercontent.com/muralikrishnat/pro-gen-templates/main/templates-list.json`;
-
-  const { data } = await axios.get(url);
+  
+  // Use fetch API to get the versions list from GitHub
+  const response = await fetch(url);
+  const data = await response.json();
+  
   return (data[type] || []).map((item) => ({ value: item.name, name: item.name + ' : ' + item.description }));
 }
 
