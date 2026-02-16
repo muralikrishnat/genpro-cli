@@ -1,0 +1,30 @@
+{
+  "name": "genpro-cli",
+  "version": "0.9.0",
+  "description": "CLI to generate UI/API/Fullstack projects from versioned GitHub templates",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "genpro": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js"
+  },
+  "keywords": [
+    "cli",
+    "scaffold",
+    "generator",
+    "templates"
+  ],
+  "author": "Muralikrishna T<muralikrishna8811@gmail.com>",
+  "license": "MIT",
+  "packageManager": "pnpm@10.11.0",
+  "dependencies": {
+    "axios": "^1.13.5",
+    "chalk": "^5.6.2",
+    "degit": "^2.8.4",
+    "fs-extra": "^11.3.3",
+    "inquirer": "^13.2.2",
+    "ora": "^9.3.0"
+  }
+}
