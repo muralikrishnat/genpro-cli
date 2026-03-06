@@ -1,6 +1,6 @@
 {
   "name": "genpro-cli",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "description": "CLI to generate UI/API/Fullstack projects from versioned GitHub templates",
   "main": "index.js",
   "type": "module",
@@ -23,10 +23,8 @@
   "license": "MIT",
   "packageManager": "pnpm@10.11.0",
   "dependencies": {
-    "chalk": "^5.6.2",
     "degit": "^2.8.4",
-    "inquirer": "^13.2.2",
-    "ora": "^9.3.0"
+    "inquirer": "^13.2.2"
   },
   "repository": {
     "type": "git",
